@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lasaña Tradicional</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #ffebee, #ffcdd2);
+            min-height: 100vh;
+        }
+        
+        .titulo {
+            text-align: center;
+            animation: shake 2s infinite;
+            margin-bottom: 40px;
+        }
+        
+        .titulo a {
+            color: #c62828;
+            text-decoration: none;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .receta-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            animation: slideIn 1.5s ease-out;
+        }
+        
+        .ingredientes, .pasos {
+            margin: 25px 0;
+            padding: 20px;
+            border-left: 5px solid #ef5350;
+            transition: transform 0.3s ease;
+        }
+        
+        .ingredientes:hover, .pasos:hover {
+            transform: translateX(10px);
+        }
+        
+        h2 {
+            color: #b71c1c;
+            margin-bottom: 15px;
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateX(-100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="titulo">
+        <a href="index.html">🍖 Lasaña Tradicional con Carne 🧀</a>
+    </div>
+    
+    <div class="receta-container">
+        <div class="ingredientes">
+            <h2>🥩 Ingredientes (6 personas):</h2>
+            <ul>
+                <li>12 láminas de lasaña</li>
+                <li>500g de carne picada mixta</li>
+                <li>800g de salsa de tomate</li>
+                <li>200g de queso mozzarella</li>
+                <li>1 cebolla picada</li>
+                <li>50g de queso parmesano</li>
+                <li>Especias al gusto</li>
+            </ul>
+        </div>
+        
+        <div class="pasos">
+            <h2>👨🍳 Pasos de preparación:</h2>
+            <ol>
+                <li>Dorar la carne con cebolla</li>
+                <li>Añadir salsa de tomate y cocinar 15 min</li>
+                <li>Alternar capas: pasta, carne, queso</li>
+                <li>Cubrir con bechamel y queso</li>
+                <li>Hornear a 200°C durante 30 min</li>
+                <li>Dejar reposar 10 min antes de servir</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
